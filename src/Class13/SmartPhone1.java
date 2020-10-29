@@ -10,5 +10,14 @@ public class SmartPhone1 {
 
         anastasiiaPhone.text("Hello");
         anastasiiaPhone.call("5671239078");
+
+
+        SmarPhone elenasPhone = new SmarPhone();
+        elenasPhone.brand = "Nokia";
+        elenasPhone.model = "3310";
+        elenasPhone.color = "balck";
+        elenasPhone.memory = 64;
+        elenasPhone.call(" 2470987651");
+        elenasPhone.text(" I can all");
     }
 }
