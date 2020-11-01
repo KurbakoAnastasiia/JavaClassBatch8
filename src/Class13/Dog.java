@@ -11,7 +11,7 @@ public class Dog {
     char gender;
     boolean isHealthy;
 
-    void bark () {
+    public void bark () {
         System.out.println("Dogs barks");
     }
         void play() {

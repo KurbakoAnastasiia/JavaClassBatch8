@@ -1,5 +1,7 @@
 package Class15;
 
+import java.util.Arrays;
+
 public class HW {
     public static void main(String[] args) {
 
@@ -11,16 +13,29 @@ public class HW {
         for (int i = str.length() - 1; i >= 0; i--) {
             System.out.print(str.charAt(i));
     }
+        System.out.println("----------------Another way-------------------");
+        String str1 = "Anna";
+        String reverse = "";
+        for (int n = str1.length() - 1; n >= 0; n--) {
+            reverse += str1.charAt(n);
+        }
+        System.out.println(reverse);
+        System.out.println("Is " + str1 + " palindrome?" + reverse.equalsIgnoreCase(str1));
+
         System.out.println();
         System.out.println("-----------------TASK 2----------------------");
         // How would you reverse a String word by word?
 
-        String words = new String("You Love Java");
-        String[] array = words.split(" ");
-
-        for (int i = array.length - 1; i >= 0; i--) {
-            System.out.print(array[i] + " ");
+        String sentence = "What did u use the most?";
+        String[] stringArray = sentence.split(" "); // to split ellements inside array
+        System.out.println(Arrays.toString(stringArray)); // to print all elements array
+        for (int i = 0; i < stringArray.length; i++) {
+            StringBuilder stringBuilder = new StringBuilder(stringArray[i]); // to store element of array in another String
+            // System.out.println(stringBuilder); // to print array[i] before reversing
+            stringArray[i] = stringBuilder.reverse().toString(); // to reverse elements
+            // System.out.println(stringArray[i]); // to print array[i] after reversing
         }
+        System.out.println(Arrays.toString(stringArray));
         System.out.println();
         System.out.println("-----------------TASK 3----------------------");
         // How would you check if String is palindrome or not?
