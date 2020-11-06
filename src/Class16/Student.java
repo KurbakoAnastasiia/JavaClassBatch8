@@ -10,19 +10,33 @@ public class Student {
     score > 50 - D
     anything else - F (edited)*/
 
-    public static char grade(int score) {
+    public static char getGrade(int score) {
 
-        if (score >= 90) {
-            return 'A';
+        char grade;
+
+        if (score >= 90 && score <= 100) {
+            grade = 'A';
         } else if (score >= 80 && score < 90) {
-            return 'B';
+           grade = 'B';
         } else if (score >= 70 && score < 80) {
-            return 'C';
+            grade = 'C';
         } else if (score >= 50 && score < 70) {
-            return 'D';
+           grade = 'D';
         } else {
-            return 'F';
+            grade = 'F';
         }
+        return grade;
+
+    }
+
+    public static void main(String[] args) {
+        Student task3 = new Student();
+        System.out.println(" task3.getGrade(90) " + task3.getGrade(90));
+        System.out.println(" task3.getGrade(101) " + task3.getGrade(101));
+        System.out.println(" task3.getGrade(40) " + task3.getGrade(40));
+        System.out.println(" task3.getGrade(70) " + task3.getGrade(70));
+        System.out.println(" task3.getGrade(-1) " + task3.getGrade(-1));
+
     }
 
 }

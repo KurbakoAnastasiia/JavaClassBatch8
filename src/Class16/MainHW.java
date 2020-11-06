@@ -14,6 +14,15 @@ public class MainHW {
             }
 
 
-        System.out.println(Student.grade(83));
+        System.out.println(Student.getGrade(83));
+
+            HW task2 = new HW();
+            boolean prime = task2.primeIs(25);
+            boolean prime1 = task2.primeIs(1);
+            boolean prime2 = task2.primeIs(10);
+
+        System.out.println("primeIs(25) " + prime);
+        System.out.println("primeIs(1) " + prime1);
+        System.out.println("primeIs(10) " + prime2);
     }
 }

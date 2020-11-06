@@ -27,5 +27,18 @@ public class HW {
             return true;
         }
     }
+    boolean primeIs(int number) {
+
+        if(number <= 1) {
+            return false;
+        }
+        boolean primeIs = true;
+        for(int j = 2; j <= number / 2; j++) {
+            if (number % j == 0) {
+                primeIs = false;
+            }
+        }
+        return primeIs;
+    }
 }
 
