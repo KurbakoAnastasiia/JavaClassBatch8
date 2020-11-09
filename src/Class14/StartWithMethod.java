@@ -5,6 +5,6 @@ public class StartWithMethod {
         String var = "maybe you can give a real life";
 
         System.out.println(var.startsWith("real"));
-        System.out.println(var.startsWith("may"));
+        System.out.println(var.startsWith("May"));
     }
 }
