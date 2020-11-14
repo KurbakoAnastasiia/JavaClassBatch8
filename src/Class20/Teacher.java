@@ -23,8 +23,7 @@ public class Teacher {
         this.salary = salary;
         this.education = education;
     }
-
-    public Teacher() {
+    Teacher () {
 
     }
 
