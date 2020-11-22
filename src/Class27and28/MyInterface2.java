@@ -1,4 +1,4 @@
-package Class27;
+package Class27and28;
 
 public interface MyInterface2 {
 

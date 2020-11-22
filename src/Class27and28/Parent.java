@@ -1,4 +1,4 @@
-package Class27;
+package Class27and28;
 interface Outputs {
     void display(double result);
 }

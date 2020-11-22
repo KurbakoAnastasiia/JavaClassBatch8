@@ -1,4 +1,4 @@
-package Class27;
+package Class27and28;
 
 public class ChildClassTester {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Class27;
+package Class27and28;
 
 public interface MyInterface extends MyInterface2, MyInterface3 {
     // before Java 8
