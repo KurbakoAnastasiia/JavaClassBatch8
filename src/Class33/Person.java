@@ -14,6 +14,7 @@ In that map store personId and a Person Object. Print each object details.*/
     private String lastName;
     private int age;
     private double salary;
+    public Person() {}
     public Person(String name, String lastName, int age, double salary) {
         this.name = name;
         this.lastName = lastName;
@@ -21,8 +22,18 @@ In that map store personId and a Person Object. Print each object details.*/
         this.salary = salary;
     }
     public void printInfo() {
-        System.out.println(name + " " + lastName + " is " + age + " years old and has " + salary + " annual salary");
+        System.out.println(toString());
 
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", salary=" + salary +
+                '}';
     }
 }
 

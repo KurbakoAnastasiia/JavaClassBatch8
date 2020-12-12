@@ -14,13 +14,12 @@ If any city name is more than 7 characters remove that city . */
 
         Map<String, Integer> citiesMap = new TreeMap<>();
 
-        for(int i = 0; i < citiesArray.length; i++) {
-            citiesMap.put(citiesArray[i], citiesArray[i].length());
+        for(String s : citiesArray) {
+            citiesMap.put(s, s.length());
         }
         System.out.println(citiesMap);
 
-        Set<Map.Entry<String, Integer>> citiesSet = citiesMap.entrySet();
-        Iterator<Map.Entry<String, Integer>> iterator = citiesSet.iterator();
+        Iterator<Map.Entry<String, Integer>> iterator = citiesMap.entrySet().iterator();
         while(iterator.hasNext()) {
             Map.Entry<String, Integer> element = iterator.next();
 

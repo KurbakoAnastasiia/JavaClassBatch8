@@ -1,16 +1,13 @@
 package Class33;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class HW5 {
     /*Create a Map that will store Employee name and salary.
     Write a logic to retrieve an employee who gets the highest salary. Output should be in the below format
 John Smith=$100000*/
     public static void main(String[] args) {
-        Map<String, Integer> employee = new HashMap<>();
+        Map<String, Integer> employee = new LinkedHashMap<>();
         employee.put("John Smith", 100000);
         employee.put("Henry Crust", 67000);
         employee.put("Mike Danstry", 120000);
